@@ -1,0 +1,70 @@
+.exam {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.exam .box {
+  width: 32rem;
+  position: relative;
+  background-color: #fff;
+  padding: 10rem 4rem 6rem;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+}
+.exam .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--purple-light);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+.exam .box:hover:before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+.box .box-number {
+  position: absolute;
+  left: 4rem;
+  top: 6rem;
+  font-size: 8rem;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.box:hover .box-number {
+  opacity: 1;
+  color: #fff;
+  transform: translateY(-4rem);
+}
+.box h5 {
+  position: relative;
+  font-size: 1.5em;
+  z-index: 2;
+  color: #333;
+  transition: 0.5s;
+}
+.box h5 {
+  position: relative;
+  font-size: 1.5em;
+  z-index: 2;
+  color: #333;
+  transition: 0.5s;
+}
+.box .box-text {
+  position: relative;
+  font-size: 1.8rem;
+  z-index: 2;
+  color: #333;
+  transition: 0.5s;
+}
+.box:hover h5,
+.box:hover .box-text {
+  color: #fff;
+}

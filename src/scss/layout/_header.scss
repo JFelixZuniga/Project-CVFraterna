@@ -1,0 +1,116 @@
+.header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // background-color: var(--purple-transparent);
+  // background-color: tomato;
+  z-index: 999;
+  transition: 0.5s;
+
+  &.header.active {
+    background-color: rgba(248, 241, 241, 0.9);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      // align-items: center;
+      align-items: flex-end;
+      /* justify-content: space-between; */
+
+      img {
+        max-width: 7rem;
+      }
+      .logo-text {
+        font-size: 4rem;
+        font-weight: bold;
+        color: $negro;
+        // color: rgba(248, 241, 241, 0.5);
+        // -webkit-text-stroke: 0.5vw #00c4a1;
+      }
+    }
+  }
+}
+
+.hamburger-menu {
+  font-size: 2.6rem;
+  color: #2d2c2c;
+  cursor: pointer;
+  position: relative;
+  z-index: 1500;
+
+  .fa-times {
+    display: none;
+  }
+}
+
+.menu-open .hamburger-menu .fa-times {
+  display: block;
+}
+
+.menu-open .hamburger-menu .fa-bars {
+  display: none;
+}
+
+.nav-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(248, 241, 241, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1400;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s;
+  padding: 0;
+
+  .nav-item:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-link {
+    display: block;
+    color: $negro;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+  }
+}
+
+.menu-open .nav-list {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* efecto */
+.nav-list .nav-item {
+  position: relative;
+}
+.nav-list .nav-item::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  position: absolute;
+  background: #16c79a;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+.nav-list .nav-item:hover::after {
+  width: 100%;
+}

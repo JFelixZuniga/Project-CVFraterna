@@ -9,11 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Colegio Virtual Fraterna</title>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!--Font awesome CDN-->
     <link
       rel="stylesheet"
@@ -22,16 +19,17 @@
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="./normalize.css" />
     <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="./styles.css" /> -->
     <link rel="stylesheet" href="./build/css/app.css">
-    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+
     <header class="header">
       <div class="container">
         <nav class="nav">
           <a href="index.html" class="logo">
             <img
-              src="./assets/images/logo.png"
+              src="./build/img/images/logo.png"
               alt="Logo Colegio Virtual Fraterna"
             />
             <span class="logo-text">Fraterna</span>
@@ -61,12 +59,12 @@
       </div>
     </header>
 
-    
-      <div class="hero">
+
+    <div class="hero">
         <article
           class="hero-image"
           style="
-            --hero-image: url('assets/images/hero-image.jpg');
+            --hero-image: url('./build/img/images/hero-image.jpg');
             --hero-attachment: fixed;
           "
         >
@@ -93,11 +91,11 @@
             </div>
           </aside>
         </article>
-      </div>
+    </div>
 
       
       <!-- Sección Proyecto educativo start -->
-      <main>
+    
       <section class="project container">
         <h2 class="section-title">Proyecto Educativo</h2>
         <div class="project-grid">
@@ -128,7 +126,7 @@
           </aside>
         </div>
       </section>
-      </main>
+
       <!-- Sección Proyecto educativo end -->
 
       <!-- Sección Examenes Libres start -->
@@ -379,7 +377,7 @@
       </div>
     </footer>
 
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
     <script src="./build/js/bundle.min.js"></script>
   </body>
 </html>
