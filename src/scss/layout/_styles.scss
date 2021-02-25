@@ -1,13 +1,3 @@
-/*Import the fonts used*/
-@import url("https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap");
-/*Basic reset*/
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 /*Custom properties*/
 :root {
   --dark-color: #2d2c2c;
@@ -52,39 +42,6 @@ section {
   font-family: -webkit-pictograph;
   font-weight: 600;
   font-size: 3rem;
-}
-.btn {
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.5rem 3.5rem;
-  border: none;
-  border-radius: 10rem;
-  display: inline-flex;
-  align-items: center;
-}
-
-.btn-gradient {
-  background-image: var(--gradient-color);
-}
-
-.btn-gradient:hover {
-  background-image: var(--gradient-color-alt);
-}
-
-.btn-purple {
-  background-color: var(--purple-solid);
-}
-
-.btn-purple:hover {
-  background-color: #56247f;
-}
-
-.dots {
-  font-size: 2.4rem;
-  margin-left: 0.5rem;
-  opacity: 0.75;
 }
 
 .form-btn {
@@ -144,13 +101,6 @@ section {
 
 /* Media queries */
 @media screen and (min-width: 768px) {
-  /* Header section styles */
-  .header {
-    height: 10rem;
-  }
-  .header.active {
-    height: 6rem;
-  }
   /* Hero section styles */
   .title {
     font-size: 6.8rem;

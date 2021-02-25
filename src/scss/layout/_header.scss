@@ -18,12 +18,12 @@
   // background-color: tomato;
   z-index: 999;
   transition: 0.5s;
-  // background-color: royalblue;
+  // background-color: $blanco;
+  // background-color: $naranjo;
 
   &.active {
-    // background-color: rgba(248, 241, 241, 0.9);
-    height: 7rem;
-    background-color: coral;
+    background-color: rgba(248, 241, 241, 0.9);
+    height: 6rem;
     transition: 0.5s;
     box-shadow: 0 -1rem 5px 10px black;
   }
