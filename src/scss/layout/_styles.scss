@@ -35,44 +35,12 @@
 }
 
 /* Global styles */
-html {
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  color: var(--dark-color);
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
 
 section {
   padding: 5rem 0;
 }
 
 /* Reusable styles */
-.container {
-  width: 100%;
-  max-width: 120rem;
-  padding: 0 1.5rem;
-  margin: 0 auto;
-}
-.text-center {
-  text-align: center;
-}
-.none {
-  display: none;
-}
 .section-title {
   border-top: thin solid var(--first-color);
   border-bottom: thin solid var(--first-color);

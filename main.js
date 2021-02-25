@@ -1,6 +1,7 @@
 //Selectors
-let header = document.querySelector(".header");
-let hamburgerMenu = document.querySelector(".hamburger-menu");
+const header = document.querySelector(".header");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+// const navLink = document.querySelector("#contact");
 
 window.addEventListener("scroll", function () {
   let windowPosition = window.scrollY > 0;
@@ -10,6 +11,11 @@ window.addEventListener("scroll", function () {
 hamburgerMenu.addEventListener("click", function () {
   header.classList.toggle("menu-open");
 });
+
+// navLink.addEventListener("click", function () {
+//   // header.classList.toggle("menu-open");
+//   header.classList.remove("menu-open");
+// });
 
 /* ********** ContactForm ********** */
 ((d) => {
