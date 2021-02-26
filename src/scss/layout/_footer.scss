@@ -1,56 +1,127 @@
-.footer {
-  padding: 5rem 0 0 0;
-  background-color: var(--purple-solid);
-  color: #2d2c2c;
+footer {
+  width: 100%;
+  min-height: 28rem;
+  background-color: $calipso-dark;
+  margin-top: 10rem;
+  // padding-bottom: 5rem;
+  padding: 0px 2rem 1rem;
+  border-top: 6px solid $naranjo;
+  // font-weight: $delgada;
+  @include desktop {
+    padding-bottom: 0;
+  }
+
+  .footer-cards {
+    color: $gris;
+    margin-top: 3rem;
+    font-weight: $delgada;
+    margin-bottom: 5rem;
+    // padding-bottom: 2rem;
+    @include tablet {
+      @include grid(2, $separacion / 2);
+      // .card-item {
+      //   margin-bottom: 1rem;
+      // }
+    }
+
+    h4 {
+      text-transform: uppercase;
+      position: relative;
+      font-size: 1.4rem;
+      margin-bottom: 3rem;
+      font-weight: $delgada;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1.5rem;
+        left: 0;
+        width: 9rem;
+        height: 1px;
+        background-color: $gris;
+      }
+    }
+    p a {
+      font-size: 1.1rem;
+      color: $gris;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: $naranjo;
+      }
+    }
+    .fab {
+      font-size: 2.5rem;
+      line-height: 6rem;
+      text-align: center;
+      width: 6rem;
+      height: 6rem;
+      color: $blanco;
+      transition: 0.5s;
+      &:hover {
+        border-radius: 50%;
+      }
+    }
+    .fa-facebook-f {
+      background-color: #3b5998;
+    }
+    .fa-instagram-square {
+      background-color: #c32aa3;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 12rem;
+      .item-addres {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        i {
+          margin-right: 1rem;
+          color: $gris;
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 1.4rem;
+          margin: 0;
+          color: $blanco;
+          transition: 0.5s;
+          &:hover {
+            color: $blanco;
+          }
+        }
+      }
+    }
+    .card-item {
+      &:not(:last-child) {
+        margin-bottom: 5rem;
+        @include tablet {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @include desktop {
+      @include grid(4, $separacion / 2);
+    }
+
+    //   @include telefono {
+    //     @include grid(1, 0);
+    //     .card-item:not(:last-child) {
+    //       margin-bottom: 3rem;
+    //     }
+    //   }
+  }
 }
 
-.footer-content-brand {
-  margin-bottom: 5rem;
-}
-
-.footer .paragraph {
-  color: inherit;
-}
-
-.footer-heading {
-  text-transform: uppercase;
-  margin-bottom: 2.5rem;
-}
-
-.social-media {
-  display: flex;
-}
-
-.sm-link {
-  width: 4rem;
-  height: 4rem;
-  font-size: 2rem;
-  border: 2px solid var(--yellow-solid);
-  border-radius: 50px;
-  display: flex;
-  margin-right: 1rem;
-  transition: background-color 0.5s;
-}
-
-.sm-link:hover {
-  background-color: var(--yellow-solid);
-  color: var(--dark-color);
-}
-
-.sm-link i {
-  margin: auto;
-}
-
-.social-media a {
-  padding: 0 0.4rem;
-  text-decoration: none;
-}
 .copyright {
   color: #f3f3f3;
   background-color: #2f4858;
   height: 6rem;
   text-align: center;
-  margin-top: 5rem;
+  // margin-top: 5rem;
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
@@ -63,7 +134,7 @@
   height: 5.5rem;
   line-height: 5.5rem;
   bottom: 4rem;
-  right: 2rem;
+  right: 2.5rem;
   background-color: #0df053;
   color: $blanco;
   border-radius: 50%;
