@@ -56,3 +56,22 @@
   justify-content: center;
   align-items: center;
 }
+
+.btn-wsp {
+  position: fixed;
+  width: 5.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  bottom: 4rem;
+  right: 2rem;
+  background-color: #0df053;
+  color: $blanco;
+  border-radius: 50%;
+  font-size: 4.5rem;
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  &:hover {
+    background-color: $blanco;
+    color: #0df053;
+  }
+}

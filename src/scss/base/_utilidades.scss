@@ -27,3 +27,15 @@
   margin-left: 0.5rem;
   opacity: 0.75;
 }
+
+.section-title {
+  border-top: thin solid $calipso;
+  border-bottom: thin solid $calipso;
+  margin: $separacion auto;
+  padding: 0.5rem 1rem;
+  max-width: 500px;
+  text-align: center;
+  font-family: -webkit-pictograph;
+  font-weight: 600;
+  font-size: 3rem;
+}

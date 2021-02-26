@@ -73,6 +73,7 @@
 
       @include desktop {
         font-size: 7.5rem;
+        -webkit-text-stroke: 0.1vw #00c4a1;
       }
 
       &::before {
