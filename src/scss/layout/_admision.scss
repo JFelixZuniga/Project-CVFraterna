@@ -67,6 +67,22 @@
         left: -3.5rem;
         background: url(../img/icons/check.svg) center center no-repeat;
       }
+      &.time::before {
+        position: absolute;
+        content: "";
+        width: 2.5rem;
+        height: 2.5rem;
+        left: -3.5rem;
+        background: url(../img/icons/time-five.svg) center center no-repeat;
+      }
+      &.book::before {
+        position: absolute;
+        content: "";
+        width: 2.5rem;
+        height: 2.5rem;
+        left: -3.5rem;
+        background: url(../img/icons/book-reader.svg) center center no-repeat;
+      }
       span {
         color: $azul;
       }
