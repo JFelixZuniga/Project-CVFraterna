@@ -1,6 +1,4 @@
-/******** Accordion Section start ********/
 .accordion {
-  /* max-width: 400px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   overflow: hidden;
@@ -51,4 +49,3 @@
 .accordion__input:checked ~ .accordion__label::after {
   transform: translateY(-50%) rotate(0.5turn);
 }
-/******** Accordion Section start ********/

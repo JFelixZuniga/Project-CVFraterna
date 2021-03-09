@@ -8,10 +8,7 @@
     @include grid(2, $separacion);
   }
   p {
-    // display: grid;
-    // grid-template-columns: 1fr;
     line-height: 1.7;
-    // margin-bottom: 1.3rem;
     span {
       font-weight: $bold;
     }
@@ -22,15 +19,7 @@
     }
   }
   .project-img img {
-    /* height: 100%; */
-    // width: 100%;
-    /* background: url("./assets/images/img-1.jpg") center no-repeat; */
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
     padding: $separacion / 2 0;
-    // display: flex;
-    // margin-top: 5rem;
     @include desktop {
       max-width: 45rem;
     }

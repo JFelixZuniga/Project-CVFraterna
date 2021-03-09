@@ -3,10 +3,6 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  // @include desktop {
-  //   @include grid(2, $separacion / 2);
-  // }
-
   .box {
     min-width: 30rem;
     max-width: 55rem;
@@ -83,11 +79,3 @@
     }
   }
 }
-
-// .box h5 {
-//   position: relative;
-//   font-size: 1.5em;
-//   z-index: 2;
-//   color: #333;
-//   transition: 0.5s;
-// }
